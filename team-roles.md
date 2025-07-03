@@ -89,3 +89,5 @@
   - `final-report.md`
 - Maintain a consistent and collaborative workflow
 - Ensure all work is submitted on GitHub by each Wednesday deadline
+
+## Jira Project board accessible at - https://testtribe.atlassian.net/jira/software/projects/CLEANCITY/boards/1
