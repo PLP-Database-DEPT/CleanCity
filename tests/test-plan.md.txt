@@ -1,0 +1,97 @@
+📋 Test Plan: Phase 1 – CleanCity QA Strategy
+1️⃣ Testing Scope & Objectives
+Scope: This QA strategy applies to all five major app sections:
+
+1.Home
+
+2.Dashboard
+
+3.Feedback
+
+4.Awareness
+
+5.Admin
+
+    Objectives:
+
+1.Identify functional and non-functional defects
+
+2.Validate usability and accessibility across devices
+
+3.Assess data persistence in localStorage
+
+4.Confirm responsive design and performance under various conditions
+
+    2️⃣ Test Environments & Tools
+Category	Setup Details
+Browsers	-> Chrome, Firefox, Safari, Edge (latest versions)
+Devices     -> Desktop (Windows), Android smartphone, iPad emulator
+Network Conditions ->	3G, 4G, Wi-Fi (throttled via DevTools)
+Accessibility Tools	 -> axe DevTools, Lighthouse, NVDA screen reader
+QA  ->	GitHub Kanban, DevTools, GitLens, Markdown documentation
+Execution Tools ->	React Testing Library (optional for automation)
+    3️⃣ Test Data Requirements
+User Types:
+
+1.Regular user
+
+2. Admin user
+
+   Data Sets:
+
+1.Valid: "Test User", "Nairobi", "July 5, 2025"
+
+2.Invalid: "", "!!@@", super-long names, unsupported dates
+
+Edge Cases:
+
+1.Inputs with 0 characters
+
+2.Inputs with 255+ characters
+
+3.Special characters & emojis
+
+    4️⃣ Defect Reporting Standards
+  Severity Levels:
+
+1.Critical – breaks major functionality (e.g. form cannot submit)
+
+2.Major – affects usability or data (e.g. filter displays wrong location)
+
+3.Minor – non-blocking bug (e.g. inconsistent font)
+
+4.Cosmetic – purely visual, no impact (e.g. image misalignment)
+
+5.Bug Report Format:
+
+     markdown
+## Bug Summary
+- **Page**: Dashboard
+- **Issue**: Filter returns results for wrong region
+- **Steps to Reproduce**:
+  1. Go to Dashboard
+  2. Select “Kilimani” region
+  3. Observe the filter results
+- **Expected**: Only Kilimani requests
+- **Actual**: Mixed results from other regions
+- **Severity**: Major
+- **Attachments**: Screenshot.png
+Use GitHub Issues or defect-log.md for logging. Keep logs organized by page or date.
+
+5️⃣ Jira / Kanban Setup
+Using GitHub Projects:
+
+Columns: To Do → In Progress → Review → Done
+
+Cards: Assign each test flow, bug, or report section to teammates
+
+Tags: Use labels like UI, form-validation, accessibility, dashboard
+
+Teammates should update their cards daily to reflect activity.
+
+6️⃣ Test Environment Setup
+Aspect	Details
+Browser Matrix	Chrome 124, Firefox 123, Safari 16.4, Edge 122
+Device Testing	PC (Windows 10), Android device, iPad simulator
+Network Conditions	Use Chrome DevTools > Network > Throttling
+Accessibility Testing	axe DevTools, NVDA, keyboard nav, tab focus
