@@ -1,6 +1,6 @@
 # CleanCity: Test Plan - Team KCS
 
-## 📋 *Phase one*
+## 📋 *Phase 1 - 4*
 
 *Document Version:* 1.0  
 *Date:* July 2, 2025  
