@@ -472,10 +472,10 @@ This test plan requires approval from:
 
 | Role | Name | Date | Signature |
 |------|------|------|-----------|
-| Team Lead | Stephen Muhoho | | |
-| QA Team Member | Salma Adam | | |
-| QA Team Member | Christian Machira | | |
-| Project Instructor | [Instructor Name] | | |
+| Team Lead | Stephen Muhoho |02/07/2025 | |
+| QA Team Member | Salma Adam |02/07/2025 | |
+| QA Team Member | Christian Machira |02/07/2025 | |
+| Project Instructor | Gerald Macherechedze | | |
 
 ---
 
