@@ -13,10 +13,26 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@types/jest": "^29.5.5",
+    "babel-jest": "^30.0.4",
+    "jest": "^29.7.0",
+    "jsdom": "^22.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:manual": "react-scripts test --testPathPattern=tests/test.js",
+    "test:manual:watch": "react-scripts test --testPathPattern=tests/test.js --watch",
+    "test:manual:coverage": "react-scripts test --testPathPattern=tests/test.js --coverage --watchAll=false",
+    "test:critical": "react-scripts test --testPathPattern=tests/test.js --testNamePattern=\"CR-\" --watchAll=false",
+    "test:high": "react-scripts test --testPathPattern=tests/test.js --testNamePattern=\"HR-\" --watchAll=false",
+    "test:medium": "react-scripts test --testPathPattern=tests/test.js --testNamePattern=\"MR-\" --watchAll=false",
+    "test:low": "react-scripts test --testPathPattern=tests/test.js --testNamePattern=\"LR-\" --watchAll=false",
+    "test:runner": "node test-runner.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,4 +54,4 @@
     ]
   },
   "homepage": "."
-} 
+}

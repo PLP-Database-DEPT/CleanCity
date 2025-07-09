@@ -229,6 +229,37 @@
 | MR-002-001 | Keyboard navigation | 1. Use only keyboard to navigate<br>2. Tab through all interactive elements<br>3. Test form completion with keyboard only | All functionality accessible via keyboard, logical tab order |
 | MR-002-002 | Form label associations | 1. Inspect all forms<br>2. Verify label-input associations<br>3. Test with screen reader simulation | All form fields properly labeled and associated |
 | MR-002-003 | Image alt-text presence | 1. Inspect all images<br>2. Verify alt-text attributes<br>3. Test content accessibility | All images have appropriate alt-text or decorative marking |
+| MR-002-004 | Color contrast validation | 1. Use browser accessibility tools<br>2. Check text/background contrast ratios<br>3. Verify readability standards | All text meets WCAG contrast requirements (minimum 4.5:1) |
+| MR-002-005 | Focus indicators visibility | 1. Navigate using Tab key only<br>2. Verify focus indicators on all interactive elements<br>3. Test focus trap in modals | Clear visual focus indicators present, logical focus flow |
+
+#### **Test Suite: MR-003 - User Interface Consistency**
+**Risk Level:** Medium | **Priority:** P3
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| MR-003-001 | Navigation consistency across pages | 1. Navigate through all application pages<br>2. Verify navigation menu presence and position<br>3. Check active page indicators | Consistent navigation layout, clear active page indication |
+| MR-003-002 | Button and link styling consistency | 1. Inspect all buttons and links<br>2. Verify consistent styling and hover states<br>3. Test interaction feedback | Uniform button/link appearance and behavior across application |
+| MR-003-003 | Form styling and layout consistency | 1. Review all forms in the application<br>2. Check field spacing, labels, and styling<br>3. Verify error message display consistency | Consistent form design patterns and error handling |
+| MR-003-004 | Typography and spacing consistency | 1. Review text elements across pages<br>2. Check font sizes, weights, and line spacing<br>3. Verify heading hierarchy | Consistent typography system and visual hierarchy |
+
+#### **Test Suite: MR-004 - Cross-Browser Compatibility**
+**Risk Level:** Medium | **Priority:** P3
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| MR-004-001 | Chrome browser functionality | 1. Open application in Chrome<br>2. Test all core features and forms<br>3. Verify styling and JavaScript functionality | Full functionality and proper styling in Chrome |
+| MR-004-002 | Edge browser functionality | 1. Open application in Microsoft Edge<br>2. Test all core features and forms<br>3. Verify styling and JavaScript functionality | Full functionality and proper styling in Edge |
+| MR-004-003 | Firefox browser basic compatibility | 1. Open application in Firefox<br>2. Test core features (if available)<br>3. Document any compatibility issues | Core functionality works, minor styling differences acceptable |
+| MR-004-004 | Safari browser basic compatibility | 1. Open application in Safari (if available)<br>2. Test core features<br>3. Document any compatibility issues | Core functionality works on Safari |
+
+#### **Test Suite: MR-005 - Feedback Page Functionality**
+**Risk Level:** Medium | **Priority:** P3
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| MR-005-001 | Feedback form submission | 1. Navigate to feedback page<br>2. Fill out feedback form with valid data<br>3. Submit feedback | Feedback submitted successfully, confirmation message shown |
+| MR-005-002 | Feedback form validation | 1. Navigate to feedback page<br>2. Submit form with empty required fields<br>3. Test with invalid email format | Appropriate validation errors displayed |
+| MR-005-003 | Feedback data persistence | 1. Submit feedback form<br>2. Check if feedback is stored appropriately<br>3. Verify admin can view feedback (if applicable) | Feedback data stored and accessible |
 
 ### **4.4 LOW RISK TEST CASES**
 
@@ -237,8 +268,57 @@
 
 | Test Case ID | Test Scenario | Test Steps | Expected Result |
 |--------------|---------------|------------|-----------------|
-| LR-001-001 | Page load time measurement | 1. Clear browser cache<br>2. Load each page and measure time<br>3. Record load times | All pages load within 3 seconds on standard connection |
+| LR-001-001 | Page load time measurement | 1. Clear browser cache<br>2. Load each page and measure time<br>3. Record load times for all pages | All pages load within 3 seconds on standard connection |
 | LR-001-002 | Large dataset handling | 1. Create 50+ waste pickup requests<br>2. Navigate to dashboard<br>3. Test filtering and sorting performance | System handles large datasets without significant performance degradation |
+| LR-001-003 | Memory usage monitoring | 1. Open application in browser<br>2. Use developer tools to monitor memory<br>3. Navigate through all pages multiple times | Memory usage remains stable, no significant memory leaks |
+| LR-001-004 | localStorage size limits | 1. Create maximum number of requests<br>2. Test system behavior near storage limits<br>3. Verify graceful handling of storage constraints | System handles storage limits gracefully with appropriate user feedback |
+
+#### **Test Suite: LR-002 - Edge Case Scenarios**
+**Risk Level:** Low | **Priority:** P4
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| LR-002-001 | Special characters in form fields | 1. Enter special characters (!, @, #, etc.) in text fields<br>2. Submit forms with special character data<br>3. Verify data handling | System handles special characters appropriately, no crashes |
+| LR-002-002 | Extremely long text inputs | 1. Enter text exceeding normal limits in all fields<br>2. Test system response to oversized inputs<br>3. Verify graceful handling | System truncates or rejects oversized inputs with clear feedback |
+| LR-002-003 | Rapid form submission | 1. Fill out form quickly<br>2. Submit form multiple times rapidly<br>3. Test for duplicate submissions | System prevents duplicate submissions, shows appropriate feedback |
+| LR-002-004 | Browser back/forward navigation | 1. Navigate through application pages<br>2. Use browser back and forward buttons<br>3. Test form data persistence | Navigation works correctly, form data handled appropriately |
+
+#### **Test Suite: LR-003 - Extended Browser Support**
+**Risk Level:** Low | **Priority:** P4
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| LR-003-001 | Older Chrome versions | 1. Test on Chrome version N-2 (if available)<br>2. Check core functionality<br>3. Document compatibility issues | Core features work, minor issues documented |
+| LR-003-002 | Internet Explorer/Legacy Edge | 1. Test on IE11 or legacy Edge (if required)<br>2. Check basic functionality<br>3. Document limitations | Basic functionality available, limitations clearly documented |
+| LR-003-003 | Mobile browser compatibility | 1. Test on mobile Chrome/Safari<br>2. Verify touch interactions<br>3. Check mobile-specific features | Mobile browsers handle touch interactions properly |
+
+#### **Test Suite: LR-004 - Non-Critical UI Enhancements**
+**Risk Level:** Low | **Priority:** P4
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| LR-004-001 | Animation and transition effects | 1. Navigate through pages with animations<br>2. Test hover effects and transitions<br>3. Verify smooth visual feedback | Animations enhance user experience without hindering functionality |
+| LR-004-002 | Tooltip and help text functionality | 1. Hover over elements with tooltips<br>2. Check help text display<br>3. Verify information accuracy | Tooltips display correctly and provide helpful information |
+| LR-004-003 | Visual feedback for user actions | 1. Perform various user actions<br>2. Observe visual feedback (loading states, etc.)<br>3. Verify feedback appropriateness | Clear visual feedback provided for all user actions |
+| LR-004-004 | Theme and color scheme consistency | 1. Review all pages for color consistency<br>2. Check brand alignment<br>3. Verify visual hierarchy | Consistent color scheme and branding throughout application |
+
+#### **Test Suite: LR-005 - Data Export and Utility Features**
+**Risk Level:** Low | **Priority:** P4
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| LR-005-001 | Print functionality | 1. Navigate to printable pages<br>2. Use browser print preview<br>3. Test actual printing (if available) | Pages format appropriately for printing |
+| LR-005-002 | URL sharing and bookmarking | 1. Navigate to specific pages<br>2. Copy URLs and test in new browser window<br>3. Test bookmark functionality | URLs work correctly and maintain application state where appropriate |
+| LR-005-003 | Browser zoom functionality | 1. Test application at 50%, 100%, 150%, 200% zoom<br>2. Verify layout integrity at different zoom levels<br>3. Check text readability | Application remains functional and readable at various zoom levels |
+
+#### **Test Suite: LR-006 - Stress and Boundary Testing**
+**Risk Level:** Low | **Priority:** P4
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result |
+|--------------|---------------|------------|-----------------|
+| LR-006-001 | Maximum concurrent browser tabs | 1. Open application in multiple browser tabs<br>2. Perform actions in different tabs<br>3. Test data synchronization | Application handles multiple tabs without conflicts |
+| LR-006-002 | Extended session duration | 1. Keep application open for extended period<br>2. Test functionality after long idle time<br>3. Verify session management | Application maintains functionality during extended sessions |
+| LR-006-003 | Network interruption recovery | 1. Start using application<br>2. Simulate network disconnection<br>3. Restore connection and test recovery | Application handles network interruptions gracefully |
 
 ---
 
