@@ -305,7 +305,7 @@ _Risk Level:_ Low | _Priority:_ P4
 ### _6.1 Test Environment Setup_
 
 - _Primary Browsers:_ Google Chrome (latest), Microsoft Edge (latest)
-- _Operating Systems:_ Windows 10/11, macOS (where available)
+- _Operating Systems:_ Windows 10/11
 - _Mobile Simulation:_ Chrome DevTools, Firefox Responsive Design Mode
 - _Screen Sizes:_ 1920x1080 (Desktop), 1024x768 (Tablet), 375x667 (Mobile)
 
