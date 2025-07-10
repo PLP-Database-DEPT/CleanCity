@@ -1,5 +1,6 @@
 # CleanCity: Test Plan Document - Team KCS
 
+
 ## 📋 _Document Information_
 
 _Document Version:_ 1.0  
@@ -388,6 +389,7 @@ _Risk Level:_ Low | _Priority:_ P4
 ### _8.3 Defect Reporting Standards_
 
 #### _Defect Report Template_
+
 
 **Title:** [Clear, concise summary of the issue]
 **Severity:** [S1/S2/S3/S4]
