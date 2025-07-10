@@ -17,13 +17,7 @@ def test_sign_up():
             EC.element_to_be_clickable((By.XPATH, '//*[@id="root"]/div/div/header/div[2]/a[1]'))
         )
         sign_up_button.click()
-        time.sleep(5)
-
-        input_full_name = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, "register-name"))
-        )
-        input_full_name.send_keys("Siphesihle Sibiya")
-        time.sleep(2)  
+        time.sleep(5) 
 
         input_email_address = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "register-email"))
@@ -38,7 +32,7 @@ def test_sign_up():
         time.sleep(2)
 
         print("Current URL:", driver.current_url)
-        assert "http://localhost:3000" in driver.current_url, "URL does not contain 'localhost:3000/register'"
+        assert "http://localhost:3000" in driver.current_url,"URL does not contain 'localhost:3000/login'"
         
         submit_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CLASS_NAME, "register-btn"))
