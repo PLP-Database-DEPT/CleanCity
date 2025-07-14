@@ -16,4 +16,4 @@
 - **Expected Result:** What should happen
 - **Actual Result:** What actually happens
 - **Status:** [Open/In Progress/Fixed/Closed]
-- **Screenshot:** Link to supporting image (if any)
+- **Screenshot:** Link to supporting image 
