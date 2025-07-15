@@ -1,10 +1,12 @@
-# 🐞 Defect Log 
-| ID  | Date       | Reporter   | Feature/Area      | Severity   | Type        | Description                              | Steps to Reproduce                         | Expected Result         | Actual Result           | Status   | Screenshot |
-|-----|------------|------------|-------------------|------------|-------------|------------------------------------------|---------------------------------------------|------------------------|------------------------|----------|------------|
-| 001 | 2025-07-10 | Salma      | Dashboard         | Critical   | Functional  | Unable to load dashboard for new users   | 1. Register as new user<br>2. Log in<br>3. Access dashboard | Dashboard loads successfully | Error 500 displayed        | Open     | ![img1](screenshots/001.png) |
-| 002 | 2025-07-11 | Salma      | User Experience   | Major      | UI/UX       | Navigation menu overlaps page content    | 1. Resize browser to 1024x768<br>2. Open dashboard | Navigation menu adjusts responsively | Menu overlaps content      | In Progress | ![img2](screenshots/002.png) |
+# 🐞 Defect Log
+
+| ID  | Date       | Reporter | Feature/Area    | Severity | Type       | Description                            | Steps to Reproduce                                          | Expected Result                      | Actual Result         | Status      | Screenshot                   |
+| --- | ---------- | -------- | --------------- | -------- | ---------- | -------------------------------------- | ----------------------------------------------------------- | ------------------------------------ | --------------------- | ----------- | ---------------------------- |
+| 001 | 2025-07-10 | Salma    | Dashboard       | Critical | Functional | Unable to load dashboard for new users | 1. Register as new user<br>2. Log in<br>3. Access dashboard | Dashboard loads successfully         | Error 500 displayed   | Open        | ![img1](screenshots/001.png) |
+| 002 | 2025-07-11 | Salma    | User Experience | Major    | UI/UX      | Navigation menu overlaps page content  | 1. Resize browser to 1024x768<br>2. Open dashboard          | Navigation menu adjusts responsively | Menu overlaps content | In Progress | ![img2](screenshots/002.png) |
 
 ## Fields Explained
+
 - **ID:** Unique defect number
 - **Date:** When defect was found
 - **Reporter:** Your GitHub username
@@ -16,4 +18,26 @@
 - **Expected Result:** What should happen
 - **Actual Result:** What actually happens
 - **Status:** [Open/In Progress/Fixed/Closed]
-- **Screenshot:** Link to supporting image 
+- **Screenshot:** Link to supporting image
+
+- **ID:** 003
+- **Reporter:** Stephen Muhoho
+- **Feature/Area:** Dashboard
+- **Severity:** Critical
+- **Type:** Functional
+- **Description:** Reload always returns to the homepage
+- **Steps to Reproduce:** 1. Click on awareness 2. Click the refresh button
+- **Expected Result:** Awareness page should refresh
+- **Actual Result:** Returns to th Homepage
+- **Screenshot:** tests\screenshots\003.mp4
+
+- **ID:** 004
+- **Reporter:** Stephen Muhoho
+- **Feature/Area:** Admin Access
+- **Severity:** Low
+- **Type:** Improvement
+- **Description:** Admin has no access to feedback
+- **Steps to Reproduce:** 1. Click on the feedback button
+- **Expected Result:** Show feedback forms from users
+- **Actual Result:** Same interface as user
+- **Screenshot:** tests\screenshots\004.mp4
