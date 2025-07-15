@@ -13,28 +13,36 @@ def test_sign_up():
     try:
         driver.get("http://localhost:3000")
 
-        sign_up_button = WebDriverWait(driver, 30).until(
+        sign_up_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, '//*[@id="root"]/div/div/header/div[2]/a[1]'))
         )
         sign_up_button.click()
         time.sleep(5) 
-
-        input_email_address = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, "register-email"))
+        
+        # 		
+        
+        input_names = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.ID, "register-name"))
         )
-        input_email_address.send_keys("sibiyasa24@gmail.com")
+        input_names.send_keys("Jane Smith")
         time.sleep(2)
 
-        input_password = WebDriverWait(driver, 10).until(
+        input_email_address = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.ID, "register-email"))
+        )
+        input_email_address.send_keys("user2@test.com")
+        time.sleep(2)
+
+        input_password = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located((By.ID, "register-password"))
         )
-        input_password.send_keys("M@sango78")
+        input_password.send_keys("TestPass123?")
         time.sleep(2)
 
         print("Current URL:", driver.current_url)
         assert "http://localhost:3000" in driver.current_url,"URL does not contain 'localhost:3000/login'"
         
-        submit_button = WebDriverWait(driver, 10).until(
+        submit_button = WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.CLASS_NAME, "register-btn"))
         )
         submit_button.click()
