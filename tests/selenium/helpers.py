@@ -1,4 +1,7 @@
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.by import By
 
 def login_user(driver, email="user1@test.com", password="TestPass123"):
     try:
@@ -38,8 +41,8 @@ def log_out_user(driver):
         )
         log_out_link.click()
 
-        WebDriverWait(driver, 10).until(
-            lambda d: ("login" in d.current_url) or ("home" in d.current_url)
+        WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.LINK_TEXT, "Login"))
         )
 
     except TimeoutException:

@@ -19,8 +19,6 @@ def test_sign_up():
         sign_up_button.click()
         time.sleep(5) 
         
-        # 		
-        
         input_names = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located((By.ID, "register-name"))
         )

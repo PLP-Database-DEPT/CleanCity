@@ -20,12 +20,12 @@ def test_log_in():
         input_email_address = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "login-email"))
         )
-        input_email_address.send_keys("sibiyasa24@gmail.com")
+        input_email_address.send_keys("user2@test.com")
         
         input_password_login = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "login-password"))
         )
-        input_password_login.send_keys("M@sango78")
+        input_password_login.send_keys("TestPass123?")
         
         log_in_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CLASS_NAME, "login-btn"))
@@ -45,6 +45,5 @@ def test_log_in():
 
     finally:
         driver.quit()
-        print("Test completed, browser closed.")
 
 test_log_in()
