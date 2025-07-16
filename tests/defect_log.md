@@ -1,43 +1,18 @@
 # 🐞 Defect Log
 
-| ID  | Date       | Reporter | Feature/Area    | Severity | Type       | Description                            | Steps to Reproduce                                          | Expected Result                      | Actual Result         | Status      | Screenshot                   |
-| --- | ---------- | -------- | --------------- | -------- | ---------- | -------------------------------------- | ----------------------------------------------------------- | ------------------------------------ | --------------------- | ----------- | ---------------------------- |
-| 001 | 2025-07-10 | Salma    | Dashboard       | Critical | Functional | Unable to load dashboard for new users | 1. Register as new user<br>2. Log in<br>3. Access dashboard | Dashboard loads successfully         | Error 500 displayed   | Open        | ![img1](screenshots/001.png) |
-| 002 | 2025-07-11 | Salma    | User Experience | Major    | UI/UX      | Navigation menu overlaps page content  | 1. Resize browser to 1024x768<br>2. Open dashboard          | Navigation menu adjusts responsively | Menu overlaps content | In Progress | ![img2](screenshots/002.png) |
+| ID  | Date       | Reporter | Feature/Area    | Severity | Type          | Description                            | Steps to Reproduce                                                                                                                    | Expected Result                                    | Actual Result                 | Status      | Screenshot                                                                 |
+| --- | ---------- | -------- | --------------- | -------- | ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------- | ----------- | -------------------------------------------------------------------------- |
+| 001 | 2025-07-10 | Salma    | Dashboard       | Critical | Functional    | Unable to load dashboard for new users | 1. Register as new user<br>2. Log in<br>3. Access dashboard                                                                           | Dashboard loads successfully                       | Error 500 displayed           | Open        | ![img1](screenshots/001.png)                                               |
+| 002 | 2025-07-11 | Salma    | User Experience | Major    | UI/UX         | Navigation menu overlaps page content  | 1. Resize browser to 1024x768<br>2. Open dashboard                                                                                    | Navigation menu adjusts responsively               | Menu overlaps content         | In Progress | ![img2](screenshots/002.png)                                               |
+| 003 | 2025-07-11 | Stephen  | Functionality   | Major    | Functionality | Refresh always returns to the homepage | 1. Click on awareness<br>2. Refresh the page                                                                                          | Refreshes the awareness page                       | Rverts to the homepage        | In Progress | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/4                  |
+| 005 | 2025-07-12 | Stephen  | Dashboard       | Critical | Functionality | Filter Combinations                    | 1. Click on Dashboard<br> 2. Dropdown the filter by sttus and select pending<br>3. Dropdown the filter by location and select Nairobi | Only pending requests in Nairobi should be showing | All status in Nairobi showing | Open        | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/5#issue-3233292577 |
 
-## Fields Explained
+| 006 | 2025-07-12 | Stephen | Dashboard | Medium | Functional | Amin update of status does not reflect an error message when clicked without any selection | 1. Log in as an admin<br>2.Navigate to the admin segment<br>3. Click on the update status without selecting a request | Error message instructing the user to fill the fields | No error message | Open | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/6#issue-3233308953|
 
-- **ID:** Unique defect number
-- **Date:** When defect was found
-- **Reporter:** Your GitHub username
-- **Feature/Area:** Where defect occurs (e.g., Dashboard)
-- **Severity:** [Blocker/Critical/Major/Minor/Trivial]
-- **Type:** [Functional/UI/UX/Accessibility/Performance/Security]
-- **Description:** Brief summary of the issue
-- **Steps to Reproduce:** Clear, numbered list
-- **Expected Result:** What should happen
-- **Actual Result:** What actually happens
-- **Status:** [Open/In Progress/Fixed/Closed]
-- **Screenshot:** Link to supporting image
+| 007 | 2025-07-12 | Stephen | User Experience | Major | Functionality | Same status update to a request | 1. Log in as an admin<br>2. Naviate to the admin section<br>3. Click on the edit button for a request<br>4. Update the status to the same status it was as before | An error message should pop to warn against updating to the same status | Request status is updated successful | In Progress | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/7#issue-3233326162|
 
-- **ID:** 003
-- **Reporter:** Stephen Muhoho
-- **Feature/Area:** Dashboard
-- **Severity:** Critical
-- **Type:** Functional
-- **Description:** Reload always returns to the homepage
-- **Steps to Reproduce:** 1. Click on awareness 2. Click the refresh button
-- **Expected Result:** Awareness page should refresh
-- **Actual Result:** Returns to th Homepage
-- **Screenshot:** tests\screenshots\003.mp4
+| 008 | 2025-07-11 | Stephen | Dashboard | Critical | Security | The app doesn't log one out even after closing it | 1. Open the app<br>2. Login with admin logins<br>3. Close the tab<br>4. Reopen from history | New user login path | Access the app with the same account already logged in as before | Open | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/8 |
 
-- **ID:** 004
-- **Reporter:** Stephen Muhoho
-- **Feature/Area:** Admin Access
-- **Severity:** Low
-- **Type:** Improvement
-- **Description:** Admin has no access to feedback
-- **Steps to Reproduce:** 1. Click on the feedback button
-- **Expected Result:** Show feedback forms from users
-- **Actual Result:** Same interface as user
-- **Screenshot:** tests\screenshots\004.mp4
+| 009 | 2025-07-13 | Stephen | Dashboard | Major | UI/UX | The error message requesting one to fill the mandatory fields after submitting the form overlaps the dashboard header. | Log into the app<br>2. Navigate to the Homepage<br>3. Do not fill the form but navigate to the submit the request | The error message should show on the body and not the hdashboard header. | Error message displays on the dashboard and moves with the screen navigation | Open | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/9 |
+
+010 | 2025-07-13 | Stephen | Dashboard | Critical | Functional | After login to the app, one is directed to the dashboard instaed of the homepage | Log in as a user<br>2.Wait for redirection | Redirection to the Homepage | Redirection to the dashboard segment | Open | https://github.com/RiuK-47/CleanCity-KCS-Project/issues/10#issue-3233402557 |
