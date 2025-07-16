@@ -14,6 +14,9 @@ This application is specifically designed to provide QA learners with a realisti
 - Responsive design testing
 - Intentional bugs and inconsistencies
 
+📄 [Team Roles & Responsibilities](team-roles.md)
+
+
 ## 🚀 Features
 
 ### Pages & Functionality
@@ -42,6 +45,8 @@ This application is specifically designed to provide QA learners with a realisti
    - Request management interface
    - Status update functionality
    - Data persistence testing
+
+
 
 ## 🛠️ Tech Stack
 
