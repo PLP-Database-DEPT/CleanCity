@@ -1,4 +1,4 @@
-#!/home/siphesihle/Development/Software-Testing/CleanCity/venv/bin/python3
+#!/home/siphesihle/Development/Software-Testing/CleanCity/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
