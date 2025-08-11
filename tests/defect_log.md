@@ -44,4 +44,445 @@
 
 ---
 
+# 🐞 Bug Report Document
+
+## 1. Registration Module
+
+### 1.1 Scheduling in the Past is Allowed
+**Steps to Reproduce:**
+- Navigate to the scheduling form.
+- Select a past date.
+- Submit the form.
+
+**Expected Result:**  
+System should reject past dates with a clear error message.
+
+**Actual Result:**  
+Form accepts past dates without warning.
+
+---
+
+### 1.2 Alert Message Does Not Clear After Submission
+**Steps to Reproduce:**
+- Submit a registration or schedule.
+- Observe success/error alert.
+- Submit another form or navigate away.
+
+**Expected Result:**  
+Alerts should clear after new actions or page change.
+
+**Actual Result:**  
+Old alerts remain visible.
+
+---
+
+### 1.3 Additional Description Allows Less Than Three Characters
+**Steps to Reproduce:**
+- Enter a description under 3 characters.
+- Submit the form.
+
+**Expected Result:**  
+Validation error should block submission.
+
+**Actual Result:**  
+Form accepts short descriptions.
+
+---
+
+### 1.4 No Name Validation
+**Steps to Reproduce:**
+- Leave the name field blank or enter numbers/special characters.
+- Submit the form.
+
+**Expected Result:**  
+Name field should only allow valid alphabetic input.
+
+**Actual Result:**  
+Invalid names are accepted.
+
+---
+
+### 1.5 Invalid Inputs Accepted (Spaces, Dots, Special Characters)
+**Steps to Reproduce:**
+- Enter empty spaces or special characters in required fields.
+- Submit the form.
+
+**Expected Result:**  
+System should reject invalid formats.
+
+**Actual Result:**  
+Form accepts invalid formats.
+
+---
+
+### 1.6 Allows Scheduling for the Same Date
+**Steps to Reproduce:**
+- Schedule a pickup for a date.
+- Attempt to schedule another pickup for the same date.
+
+**Expected Result:**  
+System should block duplicate date bookings.
+
+**Actual Result:**  
+Duplicate bookings are allowed.
+
+---
+
+### 1.7 Unable to Add After Scheduling
+**Steps to Reproduce:**
+- Schedule a pickup.
+- Attempt to add another entry afterward.
+
+**Expected Result:**  
+Additional entries should be allowed if within limits.
+
+**Actual Result:**  
+Adding is blocked without explanation.
+
+---
+
+### 1.8 No Status Update After Creating a Post
+**Steps to Reproduce:**
+- Create a post via registration.
+- Check for status update.
+
+**Expected Result:**  
+Confirmation or status change should be visible.
+
+**Actual Result:**  
+No visible update.
+
+---
+
+### 1.9 Unable to Upload Profile Picture
+**Steps to Reproduce:**
+- Go to profile settings.
+- Upload a valid image file.
+
+**Expected Result:**  
+Profile picture should upload and display.
+
+**Actual Result:**  
+Upload fails silently.
+
+---
+
+## 2. Blogs Module
+
+### 2.1 User Cannot See Own Blog Posts or Comments
+**Steps to Reproduce:**
+- Create a blog post or comment.
+- Refresh or navigate to blogs page.
+
+**Expected Result:**  
+User’s posts/comments should be visible.
+
+**Actual Result:**  
+Posts/comments are missing.
+
+---
+
+### 2.2 Comments Disappear After Reload
+**Steps to Reproduce:**
+- Post a comment on a blog.
+- Refresh the page.
+
+**Expected Result:**  
+Comment should persist.
+
+**Actual Result:**  
+Comment disappears.
+
+---
+
+### 2.3 Dropdown Menu Lacks “Apply” Button
+**Steps to Reproduce:**
+- Open blog filter dropdown.
+- Select filter criteria.
+
+**Expected Result:**  
+An “Apply” button should allow users to confirm filter selection.
+
+**Actual Result:**  
+No “Apply” button present.
+
+---
+
+### 2.4 Allows Same-Day Pickup Scheduling
+**Steps to Reproduce:**
+- Attempt to schedule a pickup for the current date.
+
+**Expected Result:**  
+System should reject same-day scheduling if prohibited.
+
+**Actual Result:**  
+Same-day scheduling is accepted.
+
+---
+
+### 2.5 More Than 3 Pickups Allowed Per Week
+**Steps to Reproduce:**
+- Schedule more than 3 pickups in the same week.
+
+**Expected Result:**  
+System should enforce weekly limit.
+
+**Actual Result:**  
+No restriction enforced.
+
+---
+
+### 2.6 Less Than 24-Hour Advance Scheduling Allowed
+**Steps to Reproduce:**
+- Schedule a pickup less than 24 hours in advance.
+
+**Expected Result:**  
+Request should be rejected.
+
+**Actual Result:**  
+Request is accepted.
+
+---
+
+## 3. Community Module
+
+### 3.1 Cannot Edit or Delete Comments
+**Steps to Reproduce:**
+- Post a comment.
+- Attempt to edit or delete it.
+
+**Expected Result:**  
+Edit/delete options should work.
+
+**Actual Result:**  
+Action not possible.
+
+---
+
+### 3.2 Comments Display “You” Instead of Username
+**Steps to Reproduce:**
+- Post a comment as a logged-in user.
+- View the comment thread.
+
+**Expected Result:**  
+Username should be displayed.
+
+**Actual Result:**  
+Displays “You” instead of username.
+
+---
+
+### 3.3 No Comment Input Validation
+**Steps to Reproduce:**
+- Enter only spaces or special characters.
+- Submit the comment.
+
+**Expected Result:**  
+Validation should block invalid inputs.
+
+**Actual Result:**  
+Comment is accepted.
+
+---
+
+## 4. Awareness (Quiz) Module
+
+### 4.1 Last Question Button Still Says “Next Question”
+**Steps to Reproduce:**
+- Start the quiz and proceed to last question.
+- Observe button label.
+
+**Expected Result:**  
+Button should read “Complete Quiz.”
+
+**Actual Result:**  
+Button says “Next Question.”
+
+---
+
+### 4.2 Quiz Restarts Instead of Showing Total Score
+**Steps to Reproduce:**
+- Complete all quiz questions.
+- Click final button.
+
+**Expected Result:**  
+Final score should display.
+
+**Actual Result:**  
+Quiz restarts.
+
+---
+
+### 4.3 Score Display Inconsistencies
+**Steps to Reproduce:**
+- Complete quiz questions.
+- Observe score tracking mid-quiz.
+
+**Expected Result:**  
+Score should match number of questions answered.
+
+**Actual Result:**  
+Incorrect score displayed (e.g., “2 out of 5” on Q3 of 3).
+
+---
+
+### 4.4 Incorrect Answer Logic (“Peter Box” Always Wrong)
+**Steps to Reproduce:**
+- Select “Peter Box” as an answer.
+- Submit.
+
+**Expected Result:**  
+Correctness should depend on the question.
+
+**Actual Result:**  
+Always marked incorrect.
+
+---
+
+### 4.5 Score Increases After Quiz Completion
+**Steps to Reproduce:**
+- Finish quiz.
+- Continue clicking next or resubmitting answers.
+
+**Expected Result:**  
+Score should freeze after completion.
+
+**Actual Result:**  
+Score keeps increasing.
+
+---
+
+## 5. Dashboard Module
+
+### 5.1 Analytics UI Needs Improvement
+**Steps to Reproduce:**
+- View the dashboard analytics section.
+
+**Expected Result:**  
+Clear, readable, and visually appealing analytics.
+
+**Actual Result:**  
+UI is cluttered/unclear.
+
+---
+
+### 5.2 Scheduled Pickups Not Visible
+**Steps to Reproduce:**
+- Schedule a pickup.
+- View dashboard.
+
+**Expected Result:**  
+Scheduled pickups should be listed.
+
+**Actual Result:**  
+No pickups displayed.
+
+---
+
+### 5.3 Dashboard Missing Added Schedules
+**Steps to Reproduce:**
+- Add new schedule.
+- View dashboard.
+
+**Expected Result:**  
+Dashboard should update in real-time.
+
+**Actual Result:**  
+Data not reflected.
+
+---
+
+## 6. Landing Page (Clean City)
+
+### 6.1 Feature Section Not Interactive
+**Steps to Reproduce:**
+- Scroll to Feature section.
+- Attempt to click on features.
+
+**Expected Result:**  
+Features should link to relevant pages.
+
+**Actual Result:**  
+No interaction.
+
+---
+
+### 6.2 Feature Section Missing Links
+**Steps to Reproduce:**
+- Attempt to navigate from Feature section.
+
+**Expected Result:**  
+Links should direct to “Sign Up,” “Schedule Pickup,” or “Read Blog.”
+
+**Actual Result:**  
+No navigation available.
+
+---
+
+## 7. Profile Module
+
+### 7.1 User Comments Not Displayed
+**Steps to Reproduce:**
+- Post a comment.
+- Visit profile.
+
+**Expected Result:**  
+Profile should show user’s comments.
+
+**Actual Result:**  
+Comments not shown.
+
+---
+
+### 7.2 Missing Redirect to Create Blog Post
+**Steps to Reproduce:**
+- Attempt to create a blog post from profile.
+
+**Expected Result:**  
+Redirect to blog creation form.
+
+**Actual Result:**  
+No redirection.
+
+---
+
+### 7.3 Scheduled Requests Not Reflected
+**Steps to Reproduce:**
+- Schedule a request.
+- View profile.
+
+**Expected Result:**  
+Scheduled requests should be listed.
+
+**Actual Result:**  
+No records shown.
+
+---
+
+## 8. Home / Sign-up Module
+
+### 8.1 Multiple Accounts with Same Credentials Allowed
+**Steps to Reproduce:**
+- Sign up with an email and password.
+- Repeat sign-up with same credentials.
+
+**Expected Result:**  
+System should reject duplicates with error message.
+
+**Actual Result:**  
+Multiple accounts created.
+
+---
+
+### 8.2 Missing “User Already Exists” Error
+**Steps to Reproduce:**
+- Attempt to register with an existing email.
+
+**Expected Result:**  
+Clear “User already exists” message displayed.
+
+**Actual Result:**  
+No error shown.
+
+
 ✅ **End of Final Defect Log**
