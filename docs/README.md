@@ -3,7 +3,7 @@
 ## 🎯 **Project Overview**
 
 **Project Name:** CleanCity - Waste Pickup Scheduler Web Application  
-**Testing Period:** Until July 16th, 2025  
+**Testing Period:** Until November 18th, 2025  
 **Team Size:** 3 QA Specialists per group  
 **Deliverable:** Comprehensive Test Report + 5-minute Video Presentation  
 
@@ -29,9 +29,9 @@
 *Note: Specific group assignments and meeting links will be provided separately*
 
 ### **📊 Meeting Agenda**
-- **Week 1 (June 26):** Project kickoff, team formation, project management tool setup (Jira or GitHub Kanban)
-- **Week 2 (July 3):** Test planning review, progress check
-- **Week 3 (July 10):** Final review, submission preparation
+- **Week 1 (November 5):** Project kickoff, team formation, project management tool setup (Jira or GitHub Kanban)
+- **Week 2 (November 11):** Test planning review, progress check
+- **Week 3 (November 18):** Final review, submission preparation
 
 ---
 
@@ -327,7 +327,7 @@ All student groups must submit their entire project repository in phases, with a
 ### **Weekly Submission Structure**
 
 #### **Week 1: Initial Setup & Planning**
-- Due: Wednesday, July 2, 2025
+- Due: **Wednesday, November 5, 2025**
 - Repository initialized with project structure
 - `tests` folder created
 - Initial test plan and strategy documented (`tests/test-plan.md`)
@@ -335,7 +335,7 @@ All student groups must submit their entire project repository in phases, with a
 - Any initial setup scripts or environment notes
 
 #### **Week 2: Test Design & Early Execution**
-- Due: Wednesday, July 9, 2025
+- Due: **Tuesday, November 11, 2025**
 - Updated test plan and strategy
 - Draft test cases and checklists (`tests/test-cases.md`)
 - Early manual or automated test scripts (Jest, PyTest, Selenium, etc.)
@@ -343,7 +343,7 @@ All student groups must submit their entire project repository in phases, with a
 - Documentation of any challenges or changes
 
 #### **Week 3: Test Execution & Reporting**
-- Due: Wednesday, July 16, 2025
+- Due: **Tuesday, November 18, 2025**
 - Expanded/updated test cases and scripts
 - Results of executed tests (manual and automated)
 - Updated defect/issue log with findings
@@ -351,17 +351,12 @@ All student groups must submit their entire project repository in phases, with a
 - Refined documentation and lessons learned
 
 #### **Final Submission: Complete Project**
-- Due: Wednesday, July 16, 2025 (same as Week 3)
+- Due: **Tuesday, November 18, 2025**
 - All test files, scripts, and documentation in the `tests` folder
 - Final test report and summary (`tests/final-report.md`)
 - Complete defect/issue log
 - All code, documentation, and deliverables committed to the repo
 - Any additional materials required by the instructor
-
-**Note:**
-- Each weekly submission must be a full snapshot of the project at that stage, committed and pushed to the repository.
-- Only work present in the repo at each phase will be reviewed and graded.
-- Feedback will be provided after each phase to guide improvements for the next submission.
 
 ---
 
@@ -399,12 +394,6 @@ All student groups must submit their entire project repository in phases, with a
 - **Team Reflection:** Collaboration effectiveness
 - **Process Reflection:** Testing methodology insights
 - **Future Improvement:** Recommendations for next time
-
-### **Reflection Questions**
-- What testing techniques were most effective?
-- How did your team handle challenges?
-- What would you do differently next time?
-- How has this project improved your QA skills?
 
 ---
 
@@ -507,14 +496,5 @@ To further align this course with industry standards and real-world QA expectati
 ## 📂 Test Files, Automation, and Documentation Submission
 
 All student groups must:
-- Create a folder named `tests` in the root of their repository.
-- Place all test files, scripts, and supporting source code for automated tests (e.g., Jest, PyTest, Selenium, or any other tools used) in this folder.
-- Include Markdown (`.md`) files documenting:
-  - Test design and approach
-  - How to run the tests
-  - Any setup or environment requirements
-  - Defect reports and issue logs
-- All defect reports, issues, and bug documentation must be included in the `tests` folder (or subfolders) for evaluation.
-- Only work that is present in the repository will be considered for grading and feedback.
+- Create a folder named `tests` in the root of their
 
-*This ensures your testing work is transparent, reproducible, and easy to evaluate by instructors.* 
