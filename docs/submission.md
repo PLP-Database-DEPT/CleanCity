@@ -1,310 +1,282 @@
-# Submission Guidelines for CleanCity QA Testing
+# 🧪 Submission Guidelines for CleanCity QA Testing
 
 ## 📋 **Document Information**
 
-**Document Version:** 1.0  
-**Date:** [Current Date]  
+**Document Version:** 1.1  
+**Date:** October 30, 2025  
 **Project:** CleanCity - Waste Pickup Scheduler  
 **Prepared For:** QA Testing Teams  
 
-## 📋 For full project details, see:
-- [README](./README.md) for project overview and requirements
-- [Video Presentation Guidelines](./video-guide.md) for video requirements
-- [FAQ](./faq.md) for common questions
-- [Meeting Schedule](./meeting-schedule.md) for meetings and protocols
-- [Test Data](./test-data.md) for sample data and scenarios
-- [Technical Specs](./technical-specs.md) for environment and compatibility
-- [Jira Setup Guide](./jira-setup.md) for project management
+---
+
+## 📚 **Reference Documents**
+For full project details, see:
+- [README](./README.md) — project overview and requirements  
+- [Video Presentation Guidelines](./video-guide.md) — video requirements  
+- [FAQ](./faq.md) — common questions  
+- [Meeting Schedule](./meeting-schedule.md) — meetings and communication protocols  
+- [Test Data](./test-data.md) — sample data and scenarios  
+- [Technical Specs](./technical-specs.md) — environment and compatibility  
+- [Jira Setup Guide](./jira-setup.md) — project management  
 
 ---
 
 ## 📤 **Submission Overview**
 
-### **Deadline:** July 16th, 2025 (11:59 PM)
+### **Final Deadline:** Tuesday, **November 18th, 2025 (11:59 PM)**
 
 ### **Required Deliverables:**
-1. **5-Minute Video Presentation** (MP4 format)
-2. **Comprehensive Test Report** (PDF format)
+1. 🎥 **5-Minute Video Presentation** (Youtube Unlistered format)  
+2. 🧾 **Comprehensive Test Report** (PDF format)  
 
-### **Submission Method:** Google Drive Links
+### **Submission Method:** Google Drive Links  
+
+---
 
 ## 📆 **Weekly Submission Requirements**
 
-All student groups must submit their entire project repository in phases, with a complete submission each week. Each submission is a full snapshot of the project at that stage and must be committed and pushed to the repository. Only work present in the repo at each phase will be reviewed and graded.
+All student groups must submit their **entire project repository** in **phases**, with a complete submission each week.  
+Each submission is a **full snapshot** of the project at that stage and must be committed and pushed to the repository.  
+Only work present in the repo at each phase will be reviewed and graded.
 
-### **Week 1: Initial Setup & Planning**
-- **Due:** Wednesday, July 2, 2025
-- Repository initialized with project structure
-- `tests` folder created in the root of the repository
-- Initial test plan and strategy documented (`tests/test-plan.md`)
-- Team member roles and responsibilities documented
-- Any initial setup scripts or environment notes
+### **Phase 1: Initial Setup & Planning**
+- **Due:** 🗓️ **Wednesday, November 5th, 2025**
+- Repository initialized with project structure  
+- `tests` folder created in the root of the repository  
+- Initial test plan and strategy documented (`tests/test-plan.md`)  
+- Team member roles and responsibilities documented  
+- Any initial setup scripts or environment notes  
 
-### **Week 2: Test Design & Early Execution**
-- **Due:** Wednesday, July 9, 2025
-- Updated test plan and strategy
-- Draft test cases and checklists (`tests/test-cases.md`)
-- Early manual or automated test scripts (Jest, PyTest, Selenium, etc.)
-- Initial defect/issue log (`tests/defect-log.md`)
-- Documentation of any challenges or changes
+### **Phase 2: Test Design & Early Execution**
+- **Due:** 🗓️ **Tuesday, November 11th, 2025**
+- Updated test plan and strategy  
+- Draft test cases and checklists (`tests/test-cases.md`)  
+- Early manual or automated test scripts (Jest, PyTest, Selenium, etc.)  
+- Initial defect/issue log (`tests/defect-log.md`)  
+- Documentation of any challenges or changes  
 
-### **Week 3: Test Execution & Reporting**
-- **Due:** Wednesday, July 16, 2025
-- Expanded/updated test cases and scripts
-- Results of executed tests (manual and automated)
-- Updated defect/issue log with findings
-- Screenshots, logs, or evidence of test execution
-- Refined documentation and lessons learned
+### **Final Phase: Test Execution & Reporting**
+- **Due:** 🗓️ **Tuesday, November 18th, 2025**
+- Expanded/updated test cases and scripts  
+- Results of executed tests (manual and automated)  
+- Updated defect/issue log with findings  
+- Screenshots, logs, or evidence of test execution  
+- Final test report and summary (`tests/final-report.md`)  
+- All deliverables are committed to the repository  
 
-### **Final Submission: Complete Project**
-- **Due:** Wednesday, July 16, 2025 (same as Week 3)
-- All test files, scripts, and documentation in the `tests` folder
-- Final test report and summary (`tests/final-report.md`)
-- Complete defect/issue log
-- All code, documentation, and deliverables committed to the repo
-- Any additional materials required by the instructor
-
-**Note:**
-- Each weekly submission must be a full snapshot of the project at that stage.
+**Note:**  
+Each weekly submission must be a **complete snapshot** of the project at that phase.
 
 ---
 
 ## 📹 **Video Submission Instructions**
 
 ### **Step 1: Prepare Your Video**
-- **Duration:** Exactly 5 minutes (±30 seconds)
-- **Format:** MP4, AVI, or MOV
-- **Resolution:** Minimum 720p (1280x720)
-- **File Size:** Maximum 100MB
-- **Audio:** Clear voice narration
+- **Duration:** Exactly 5 minutes (±30 seconds)  
+- **Format:** MP4, AVI, or MOV  
+- **Resolution:** Minimum 720p (1280x720)  
+- **File Size:** Maximum 100MB  
+- **Audio:** Clear voice narration  
 
 ### **Step 2: Upload to Google Drive**
-1. **Go to Google Drive** (drive.google.com)
-2. **Sign in** with your Google account
-3. **Click "New"** → "File upload"
-4. **Select your video file**
-5. **Wait for upload to complete**
+1. Go to [Google Drive](https://drive.google.com)  
+2. Sign in with your Google account  
+3. Click **“New” → “File upload”**  
+4. Select your video file  
+5. Wait for the upload to complete  
 
 ### **Step 3: Set Sharing Permissions**
-1. **Right-click** on the uploaded video file
-2. **Select "Share"**
-3. **Click "Change to anyone with the link"**
-4. **Set permission to "Viewer"**
-5. **Click "Done"**
+1. Right-click on the uploaded video  
+2. Select **“Share”**  
+3. Click **“Change to anyone with the link”**  
+4. Set permission to **“Viewer”**  
+5. Click **“Done”**  
 
 ### **Step 4: Copy Sharing Link**
-1. **Right-click** on the video file again
-2. **Select "Share"**
-3. **Click "Copy link"**
-4. **Test the link** in an incognito/private browser window
+1. Right-click on the video again  
+2. Select **“Share” → “Copy link”**  
+3. Test the link in an incognito/private window  
 
 ### **Step 5: File Naming**
-- **Format:** `TeamName_CleanCity_QA_Video_Date.mp4`
-- **Example:** `TeamAlpha_CleanCity_QA_Video_July16.mp4`
+**Format:**  
+`TeamName_CleanCity_QA_Video_Date.mp4`  
+
+**Example:**  
+`TeamAlpha_CleanCity_QA_Video_Nov18.mp4`  
 
 ---
 
 ## 📄 **PDF Report Submission Instructions**
 
 ### **Step 1: Prepare Your Report**
-**Required Sections:**
-- **Cover Page:** Team name, institution, date, project title
-- **Table of Contents:** With page numbers
-- **Executive Summary:** Key findings and recommendations
-- **Test Strategy and Approach**
-- **Test Environment Details**
-- **Test Execution Summary**
-- **Defect Analysis and Categorization**
-- **Risk Assessment**
-- **Recommendations and Improvements**
-- **Test Metrics and KPIs**
-- **Appendices:** Supporting documentation, screenshots, test cases
+Include the following sections:
+- **Cover Page:** Team name, institution, date, project title  
+- **Table of Contents:** With page numbers  
+- **Executive Summary:** Key findings and recommendations  
+- **Test Strategy and Approach**  
+- **Test Environment Details**  
+- **Test Execution Summary**  
+- **Defect Analysis and Categorization**  
+- **Risk Assessment**  
+- **Recommendations and Improvements**  
+- **Test Metrics and KPIs**  
+- **Appendices:** Supporting docs, screenshots, test cases  
 
 ### **Step 2: Convert to PDF**
-- **Format:** PDF only (no Word documents)
-- **Include:** All appendices and supporting materials
-- **Page Numbers:** All pages numbered
-- **File Size:** Maximum 50MB
+- **Format:** PDF only  
+- **Include:** All appendices and supporting materials  
+- **Page Numbers:** All pages numbered  
+- **File Size:** Maximum 50MB  
 
 ### **Step 3: Upload to Google Drive**
-1. **Go to Google Drive** (drive.google.com)
-2. **Sign in** with your Google account
-3. **Click "New"** → "File upload"
-4. **Select your PDF report**
-5. **Wait for upload to complete**
+Follow the same upload steps as the video.  
 
 ### **Step 4: Set Sharing Permissions**
-1. **Right-click** on the uploaded PDF file
-2. **Select "Share"**
-3. **Click "Change to anyone with the link"**
-4. **Set permission to "Viewer"**
-5. **Click "Done"**
+Ensure “Anyone with the link” can **view**.  
 
 ### **Step 5: Copy Sharing Link**
-1. **Right-click** on the PDF file again
-2. **Select "Share"**
-3. **Click "Copy link"**
-4. **Test the link** in an incognito/private browser window
+Test in incognito mode to verify access.  
 
 ### **Step 6: File Naming**
-- **Format:** `TeamName_CleanCity_QA_Report_Date.pdf`
-- **Example:** `TeamAlpha_CleanCity_QA_Report_July16.pdf`
+**Format:**  
+`TeamName_CleanCity_QA_Report_Date.pdf`  
+
+**Example:**  
+`TeamAlpha_CleanCity_QA_Report_Nov18.pdf`  
 
 ---
 
 ## 📧 **Final Submission Process**
 
 ### **Step 1: Verify Both Files**
-- [ ] Video file uploaded and accessible
-- [ ] PDF report uploaded and accessible
-- [ ] Both sharing links work in incognito mode
-- [ ] File names follow conventions
-- [ ] File sizes are within limits
+- [ ] Video file uploaded and accessible  
+- [ ] PDF report uploaded and accessible  
+- [ ] Both sharing links work in incognito mode  
+- [ ] File names follow conventions  
+- [ ] File sizes within limits  
 
-### **Step 2: Prepare Submission Information**
-**Required Information:**
-- Team name
-- Institution name
-- Team member names
-- Video link (Google Drive)
-- PDF report link (Google Drive)
-- Contact email for team leader
+### **Step 2: Prepare Submission Info**
+**Include:**
+- Team name  
+- Institution name  
+- Team member names  
+- Video link (Google Drive)  
+- PDF report link (Google Drive)  
+- Contact email for team leader  
 
 ### **Step 3: Submit Through Portal**
-1. **Access the submission portal** (link will be provided)
-2. **Fill in all required fields**
-3. **Paste both Google Drive links**
-4. **Include team information**
-5. **Submit before deadline**
+1. Access the **submission portal** (link to be provided)  
+2. Fill in all required fields  
+3. Paste both Google Drive links  
+4. Submit before the deadline  
 
 ---
 
 ## ✅ **Submission Checklist**
 
 ### **Before Upload**
-- [ ] Video is exactly 5 minutes (±30 seconds)
-- [ ] Video quality is 720p or higher
-- [ ] Video file size is under 100MB
-- [ ] PDF report has all required sections
-- [ ] PDF includes cover page and table of contents
-- [ ] PDF file size is under 50MB
-- [ ] Both files follow naming conventions
+- [ ] Video is exactly 5 minutes (±30s)  
+- [ ] Video ≥ 720p resolution  
+- [ ] File sizes under limits  
+- [ ] PDF report contains all required sections  
+- [ ] Cover page and table of contents included  
 
 ### **After Upload**
-- [ ] Video uploaded to Google Drive
-- [ ] PDF report uploaded to Google Drive
-- [ ] Both files set to "Anyone with link can view"
-- [ ] Both links tested in incognito browser
-- [ ] Links accessible without login required
-- [ ] Team information prepared for submission
+- [ ] Video uploaded to Google Drive  
+- [ ] PDF uploaded to Google Drive  
+- [ ] “Anyone with link can view” enabled  
+- [ ] Links tested in incognito  
+- [ ] Team info ready  
 
 ### **Final Submission**
-- [ ] Both links submitted through portal
-- [ ] Team information included
-- [ ] Submission completed before deadline
-- [ ] Confirmation email received
+- [ ] Links submitted through portal  
+- [ ] Confirmation email received  
 
 ---
 
 ## 🔧 **Troubleshooting Common Issues**
 
 ### **File Upload Problems**
-**Issue:** File won't upload to Google Drive
-**Solution:**
-- Check file size (must be under limits)
-- Try uploading in smaller chunks
-- Use a different browser
-- Check internet connection
+**Issue:** File won’t upload  
+**Solution:**  
+- Check file size limits  
+- Try another browser  
+- Check internet connection  
 
-### **Sharing Permission Issues**
-**Issue:** Link requires login to access
-**Solution:**
-- Right-click file → Share → Change to "Anyone with the link"
-- Set permission to "Viewer"
-- Test link in incognito window
+### **Permission Problems**
+**Issue:** “Access Denied” message  
+**Solution:**  
+- Right-click → Share → “Anyone with link”  
+- Permission set to Viewer  
 
-### **Link Not Working**
-**Issue:** Link shows "Access Denied"
-**Solution:**
-- Verify sharing permissions are set correctly
-- Make sure link is copied completely
-- Try generating a new sharing link
-- Check if file was moved or deleted
-
-### **File Format Issues**
-**Issue:** File format not accepted
-**Solution:**
-- Convert video to MP4 format
-- Convert report to PDF format
-- Use online converters if needed
-- Check file extensions are correct
+### **Format Issues**
+**Issue:** File rejected  
+**Solution:**  
+- Convert to MP4 (video) or PDF (report)  
+- Use proper naming convention  
 
 ---
 
 ## 📞 **Support and Contact**
 
-### **Technical Issues**
-If you encounter technical problems:
-- **Google Drive Issues:** Check Google Drive help center
-- **File Format Issues:** Use online converters
-- **Upload Problems:** Try different browser or device
+**For submission-related questions:**  
+📧 Email: [Project contact email]  
+⏰ Response Time: Within 24 hours  
+☎️ Emergency Contact: [Instructor phone or Discord handle]  
 
-### **Submission Questions**
-For questions about submission process:
-- **Email:** [Project contact email]
-- **Response Time:** Within 24 hours
-- **Emergency Contact:** [Emergency contact number]
-
-### **Deadline Extensions**
-- **No automatic extensions** will be granted
-- **Request extension** at least 48 hours before deadline
-- **Valid reasons only** (medical, technical issues)
-- **Documentation required** for extension requests
+**Technical Support:**  
+- Google Drive Help Center  
+- File conversion websites  
+- Browser troubleshooting guides  
 
 ---
 
 ## ⚠️ **Important Reminders**
 
 ### **Deadline Enforcement**
-- **No late submissions** accepted after July 16th, 2025, 11:59 PM
-- **Submit early** to avoid technical issues
-- **Test your links** before final submission
-- **Keep backup copies** of your files
+- ❌ No late submissions accepted after **Tuesday, November 18th, 2025, 11:59 PM**  
+- ✅ Submit early to avoid technical issues  
 
 ### **Quality Standards**
-- **Professional presentation** required
-- **Clear audio and video** quality
-- **Well-formatted PDF** report
-- **Complete documentation** of findings
+- Professional presentation  
+- Clear audio and visuals  
+- Proper formatting and structure  
 
 ### **Academic Integrity**
-- **Original work** only
-- **Proper citations** if using external sources
-- **Team collaboration** encouraged
-- **Honest reporting** of findings
+- Original work only  
+- Cite external resources properly  
+- Honest reporting of test results  
 
 ---
 
 ## 🎯 **Success Tips**
 
 ### **Before Submission**
-- **Practice your video** multiple times
-- **Review your report** for completeness
-- **Test all links** thoroughly
-- **Prepare backup files**
+- Rehearse your video presentation  
+- Proofread your report  
+- Validate all links  
+- Backup files  
 
-### **Submission Day**
-- **Submit early** in the day
-- **Have backup plans** ready
-- **Keep confirmation emails**
-- **Verify submission received**
+### **On Submission Day**
+- Submit early in the day  
+- Keep a confirmation screenshot  
 
 ### **After Submission**
-- **Save confirmation** details
-- **Keep backup copies** of files
-- **Note submission time** for records
-- **Prepare for potential follow-up**
+- Save confirmation email  
+- Keep backup copies  
+- Be prepared for follow-up questions  
 
 ---
 
-**Remember: Early submission is better than late submission. Test everything thoroughly and submit with confidence!** 🚀✨ 
+## 🗓️ **Updated Submission Dates Summary**
+
+| Phase | Description | Due Date |
+|--------|--------------|-----------|
+| **Phase 1** | Initial Setup & Planning | **Wednesday, November 5th, 2025** |
+| **Phase 2** | Test Design & Early Execution | **Tuesday, November 11th, 2025** |
+| **Phase 3** | Final Execution & Reporting | **Tuesday, November 18th, 2025** |
+
+---
+
+**💡 Remember:** Early submission is better than late submission.  
+Test thoroughly, document carefully, and submit with confidence! 🚀✨
