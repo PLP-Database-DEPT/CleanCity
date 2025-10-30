@@ -3,7 +3,7 @@
 ## 📋 **Document Information**
 
 **Document Version:** 1.0  
-**Date:** [Current Date]  
+**Date:** October 30, 2025  
 **Project:** CleanCity - Waste Pickup Scheduler  
 **Prepared For:** QA Testing Teams  
 
@@ -15,7 +15,7 @@
 **A:** This is a comprehensive QA testing assessment where you'll test a real web application (CleanCity) to identify bugs, validate functionality, and demonstrate your testing skills. You'll work in teams of 3, use professional tools like Jira or GitHub Kanban (free alternative), and deliver a complete test report and presentation.
 
 ### **Q: How long do we have to complete the project?**
-**A:** The project runs from June 26th to July 16th, 2025. You'll have weekly submissions every Wednesday, with the final submission due on July 16th.
+**A:** The project runs from November 5th to November 18th, 2025. You'll have weekly submissions every Wednesday, with the final submission due on November 18th.
 
 ### **Q: What if I can't attend the weekly meetings?**
 **A:** Weekly meetings are mandatory for group leaders. If you can't attend, arrange for another team member to represent your group. Contact the Module instructor in advance if there are unavoidable conflicts.
