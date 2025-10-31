@@ -17,6 +17,7 @@
 - **Resolution:** Minimum 720p (1280x720)
 - **Audio:** Clear voice narration
 - **File Size:** Maximum 100MB
+- **Camera must be on**: Every member should turn on their camera during the introduction
 
 ### **Content Structure**
 1. **Introduction** (30 seconds)
@@ -44,7 +45,7 @@
 ```
 "Hello, we are [Your Team Name] from [Your Institution]"
 "Our team consists of [Member Names]"
-"We conducted comprehensive QA testing on CleanCity"
+"We conducted comprehensive QA testing on CleanCity."
 "Our focus was on [your unique testing angle]"
 ```
 
@@ -90,7 +91,7 @@
 **What to Include:**
 - Live demonstration of 2-3 most critical bugs
 - Clear explanation of impact and severity
-- Before/after scenarios if applicable
+- Before/after scenarios, if applicable
 
 **Creative Freedom:**
 - Choose which bugs to demonstrate
@@ -284,10 +285,10 @@
 - **Size:** Maximum 100MB
 
 ### **Submission Process**
-1. Upload to designated platform
+1. Upload to the designated platform
 2. Include team information
 3. Provide contact details
-4. Submit by July 16th, 2025
+4. Submit by November 18th, 2025
 
 ---
 
